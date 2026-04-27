@@ -17,6 +17,11 @@
     /* colors */
     --color-bg: var(--rose-50);
     --color-surface: var(--white);
+    --color-text: var(--stone-900);
+    --color-muted: var(--stone-600);
+    --color-primary: var(--brown-800);
+    --color-secondary: var(--rose-800);
+    --color-border: var(--stone-150);
 
     /* typography */
     --font-sans: 'Outfit', sans-serif;
@@ -27,6 +32,10 @@
 /* === BASE LAYER === */
 @layer base {
     body {
-        @apply bg-bg
+        @apply bg-bg text-text
+    }
+
+    p {
+        @apply text-muted
     }
 }
